@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const SearcBar = () => {
-    return <input />
-};
+class SearchBar extends Component {
+    render() {
+        return (
+            <input onChange={(event) => console.log(event.target.value)} />
+        );
+    }
+}
 
-export default SearcBar;
+export default SearchBar;
